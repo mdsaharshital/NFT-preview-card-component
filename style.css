@@ -1,0 +1,115 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: hsl(217, 54%, 11%);
+}
+h3 {
+  color: hsl(0, 0%, 100%);
+}
+h3:hover {
+  color: hsl(178, 100%, 50%);
+}
+.card-desc p {
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 300;
+  color: hsl(215, 51%, 70%);
+}
+.card-album {
+  margin: 20px auto;
+  width: 300px;
+  height: 525px;
+  border-radius: 15px;
+  background-color: hsl(216, 50%, 16%);
+}
+.card-frame {
+  padding: 15px 20px;
+}
+.card-pic img {
+  width: 100%;
+  border-radius: 15px;
+}
+.card-desc {
+  margin-top: 15px;
+}
+.card-pic svg {
+  display: none;
+  transition: 0.3s all;
+  border-radius: 15px;
+}
+.card-pic {
+  position: relative;
+}
+.card-pic .svg-back {
+  display: none;
+  position: absolute;
+  width: 260px;
+  height: 260px;
+  top: 0px;
+  left: 0px;
+  border-radius: 15px;
+  background-color: hsla(178, 100%, 50%, 0.3);
+  transition: 0.3s all;
+}
+.card-pic:hover .svg-back {
+  position: absolute;
+  top: 0;
+  display: block;
+}
+.card-pic:hover svg {
+  display: block;
+  position: absolute;
+  top: 105px;
+  left: 107px;
+}
+.card-last {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.card-last .eth {
+  color: hsl(178, 100%, 50%);
+  font-weight: 400;
+}
+svg {
+  position: relative;
+  top: 3px;
+  left: -2px;
+}
+hr {
+  margin-top: 20px;
+  border-top: 1px solid hsl(215, 32%, 27%);
+}
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+footer img {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  border: 1px solid white;
+  border-radius: 50%;
+  top: 7px;
+  left: -20px;
+}
+footer span:hover {
+  color: white;
+}
+
+@media (max-width: 375px) {
+  .card-album {
+    margin: auto;
+    /* width: 360px;
+    height: 600px; */
+    transform: scale(0.8);
+  }
+  .attribution {
+    font-size: 9px;
+  }
+}
