@@ -52,13 +52,13 @@ h3:hover {
   top: 0px;
   left: 0px;
   border-radius: 15px;
-  background-color: hsla(178, 100%, 50%, 0.3);
-  transition: 0.3s all;
+  transition: 1s all linear;
 }
 .card-pic:hover .svg-back {
   position: absolute;
   top: 0;
   display: block;
+  background-color: hsla(178, 100%, 50%, 0.3);
 }
 .card-pic:hover svg {
   display: block;
